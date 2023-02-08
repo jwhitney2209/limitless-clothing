@@ -12,7 +12,7 @@ function App() {
       <Route path="/" element={<Nav />}>
         {/* index will render this element at the base level of the URL shorthand for index={true} */}
         <Route index element={<Home />} /> 
-        <Route path="shop" element={<Shop />} />
+        <Route path="shop/*" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
         <Route path='checkout' element={<Checkout />} />
       </Route>
